@@ -33,4 +33,4 @@ The function `SSVD_single` performs a user-specified rank-k approximation to the
 
 The inputs are:
 - `X`, the data matrix **X**
-- `layer`, number of layer to perform the a single SSVD algorithm
+- `layer`, number of layers to perform the SSVD algorithm
