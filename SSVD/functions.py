@@ -1,8 +1,6 @@
 import scipy.linalg as la
 import numpy as np
-from sparsesvd import sparsesvd 
-from scipy.sparse import csc_matrix
-import seaborn as sns; sns.set()
+import scipy.linalg as la
 
 def SSVD_single(x, gamma = 2, tol = 1e-6, max_iter = 50):
     

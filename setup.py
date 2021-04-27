@@ -1,23 +1,23 @@
 from setuptools import setup, find_packages
-from distutils.util import convert_path
+from os import path
 
-main_ns = {}
-ver_path = convert_path('SSVD/version.py')
-with open(ver_path) as ver_file:
-    exec(ver_file.read(), main_ns)
-
-setuptools.setup(
-    name="STA663-SSVD",
-    version=main_ns['__version__'],
-    url='https://github.com/RumoZhang/STA663-SSVD',
-    author="Rumo Zhang, Xige Huang",
-    author_email="xh90@duke.edu",
-    description="SSVD Biclustering Algorithm",
-    packages=setuptools.find_packages(),
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-    ],
-    python_requires='>=3'
-)
+setup(
+      name="STA663-SSVD",
+      version=1.0,
+      description="SSVD Biclustering Algorithm",
+      url='https://github.com/RumoZhang/STA663-SSVD',
+      author="Rumo Zhang, Xige Huang",
+      author_email="xh90@duke.edu",
+      classifiers=[
+                  'Development Status :: 3 - Alpha',
+                  'Intended Audience :: Developers',
+                  'Topic :: Software Development :: Libraries :: Python Modules',
+                  'License :: OSI Approved :: MIT License',
+                  'Programming Language :: Python :: 3',
+                  'Programming Language :: Python :: 3.4',
+                  'Programming Language :: Python :: 3.5',
+                   'Programming Language :: Python :: 3.6',
+                  ],
+      packages=find_packages(),
+      python_requires='>=3',
+      )
