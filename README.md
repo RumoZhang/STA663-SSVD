@@ -17,7 +17,8 @@ The function `SSVD_single` performs a rank-1 approximation to the data.
 
 The inputs are:
 - `X`, the data matrix **X**
-- `gamma`, gamma_1 = gamma_2, with default of 2
+- `gamma`, gamma_1, with default of 2
+- `gamma`, gamma_2, with default of 2
 - `tol`, tolerance of error, with default of 1e-6
 - `max_iter`, maximum iteration until converge, with default of 50
 
