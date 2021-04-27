@@ -24,7 +24,7 @@ The inputs are:
 
 The function returns u and v, the left- and right- sparsed singular vector, and iter, number of iterations until convergence.
 
-Note: According to Mihee Lee, Haipeng Shen, Jianhua Z. Huang, and J. S. Marron(2010), the algorithm will typically converge within 5 to 10 iterations, but if not converge within the default of 50 iterations (happens with very small probability), try to  further increase `max_iter`.
+_Note: According to Mihee Lee, Haipeng Shen, Jianhua Z. Huang, and J. S. Marron(2010), the algorithm will typically converge within 5 to 10 iterations, but if not converge within the default of 50 iterations (happens with very small probability), try to  further increase `max_iter`._
 
 
 ## SSVD_multi_layer
