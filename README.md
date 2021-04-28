@@ -8,12 +8,12 @@ The package can be installed using `pip install git+https://github.com/RumoZhang
 
 The package contains two functions, which can be loaded using:
 
-- from `SSVD.functions import SSVD_single`
+- from `SSVD.functions import SSVD`
 - from `SSVD.functions import SSVD_multi_layer`
 
-## SSVD_single
+## SSVD
 
-The function `SSVD_single` performs a rank-1 approximation to the data.
+The function `SSVD` performs a rank-1 approximation to the data.
 
 The inputs are:
 - `X`, the data matrix **X**
