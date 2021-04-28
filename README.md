@@ -8,8 +8,8 @@ The package can be installed using `pip install git+https://github.com/RumoZhang
 
 The package contains two functions, which can be loaded using:
 
-- `from SSVD.functions import SSVD`
-- `from `SSVD.functions import SSVD_multi_layer`
+- `from SSVD.functions import SSVD_single`
+- `from SSVD.functions import SSVD_multi_layer`
 
 ## SSVD
 
