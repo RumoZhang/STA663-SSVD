@@ -2,7 +2,7 @@ import scipy.linalg as la
 import numpy as np
 import scipy.linalg as la
 
-def SSVD_single(x, gamma1 = 2, gamma2 = 2, tol = 1e-6, max_iter = 50):
+def SSVD(x, gamma1 = 2, gamma2 = 2, tol = 1e-6, max_iter = 50):
     
     n, d = x.shape
     
@@ -96,7 +96,7 @@ def SSVD_multi_layer(x, layers):
     all_layers_s = np.zeros(layers)
     
     for i in range(layers):
-        u_new, s_new, v_new, iters = SSVD_single(x)
+        u_new, s_new, v_new, iters = SSVD(x)
         layer = s_new * u_new.reshape((-1, 1)) @ v_new.reshape((1, -1))
         all_layers_u[:, i] = u_new
         all_layers_v[:, i] = v_new
@@ -104,4 +104,3 @@ def SSVD_multi_layer(x, layers):
         x = x - layer
         
     return all_layers_u, all_layers_v
-    

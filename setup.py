@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 from os import path
 
 setup(
-      name="STA663-SSVD",
+      name="SSVDBiclustering",
       version=1.0,
       description="SSVD Biclustering Algorithm",
       url='https://github.com/RumoZhang/STA663-SSVD',
