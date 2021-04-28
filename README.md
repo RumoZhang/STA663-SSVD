@@ -11,9 +11,9 @@ The package contains two functions, which can be loaded using:
 - `from SSVD.functions import SSVD_single`
 - `from SSVD.functions import SSVD_multi_layer`
 
-## SSVD
+## SSVD_single
 
-The function `SSVD` performs a rank-1 approximation to the data.
+The function `SSVD_single` performs a rank-1 approximation to the data.
 
 The inputs are:
 - `X`, the data matrix **X**
